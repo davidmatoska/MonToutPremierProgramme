@@ -1,0 +1,450 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+
+void Color(int couleurDuTexte,int couleurDeFond) // fonction d'affichage de couleurs
+{
+        HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
+}
+
+int choix=0;
+
+void frog ()
+
+
+{
+    Color(15,0);
+    int choix = 1;
+    system("cls" );
+    int nombreMystereFrog = 0, nombreEntreFrog = 0;
+    const int MAX = 100, MIN = 1;
+
+
+    // Génération du nombre aléatoire
+
+    srand(time(NULL));
+    nombreMystereFrog = (rand() % (MAX - MIN + 1)) + MIN;
+
+    /* La boucle du programme. Elle se répète tant que l'utilisateur n'a pas trouvé le nombre mystère */
+
+    do
+    {
+        // On demande le nombre
+
+        printf("Salut inconnu.\nT'as une tronche de cuck.\nDevines mon age pour connaitre mon secret!\nVoici un indice: je peux vivre jusqu'a 100 ans.\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@8GCti;:,,:,.;i1LG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@8Gf1;::;;;iiiii;;::,,;tC8@@@@@@@@0GLttffffffL08@@@8@@@@@@@@@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@@@@@@@@@C1;:;ii111111i1111111tt1i;itC88GL1i::::;;;;;;;;:;1L0@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@@@@@@8f::;i11iiiiiii;;;;::::,,,,,..  .. :ii111i11ii11111i;,.iL0@@@@@@@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@8@@@L,:i11iiiii;::::::;;:;:;;;::;;:::,,,::;;i11iiii;;:,,,,.. ..:;tLC8@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@@@0:,i1iiiii;:::;ii1111i11111111ii11iiiii;:,..:;i1i;;iii1111t11ii;;:.,ifG0@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@L.;tiiiiii;;ii1iiiiiiiiii;;:::;;:::,;::::;;:::,::;1111iii;;;;:;::;:,,.,.,ifL0@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@t i1iiiiiiiiiiiiiii1i;;::;;;;;;::iii1i1ttt111;;;;;:.,::;:;;;;;;;;;;;iiii;;;;;i1f0@@@@@@\n");
+printf("@@@@@@@@@@@@f i1iiiiiiiiiiiiiii;;;;iii;;;11fCGG88@@@@@@@@80Gfi,. .;;:i;;1tttfLCLCCCGLft1i;::::C@@@@@\n");
+printf("@@@@@@@@@@@0.;tiiiiiiiiiiiiiii;:;;:;;tL00@@@@@@@@@GL111LG@@@@@8f, .;LG08@@@@@@@@0LttfG@@880Lt, G@@@@\n");
+printf("@@@@@@@@@8@L.1iiiiiiiiiiii1i:ift1tC0@@@88888888@L:       ;0@888@8i t@@@888888@G;      :G@8@@@8:t@@@@\n");
+printf("@@@@@@@@@@G.:1iiiiiiiiiiii1; tG@@@@888888888888i     ..   ;888888@:.@888888880,        .L@888@C.8@@@\n");
+printf("@@@@@@@@8t..i1iiiiiiiiiiiii1i:::;f8@888@8@@88@L     t00C, ,0@8888@t 8@888888@1 .  ,LCf. i@888@0,0@@@\n");
+printf("@@@@@@@f:;11iiiiiiiiiiiiiiiii111i,:f8@8888888@f     1@0t, :888888@t G@@88888@L    ;CCt ,0@888@0.0@@@\n");
+printf("@@@@@0;:11iiiiiiiiiiiiiiiiiiiii:;t1::f8@@888888;         :G@8888@8: ,fG@@@@@8@C,.     :0@888@@ii@@@@\n");
+printf("@@@@f,i1iiiiiiiiiiiiiiiiiiiiiii1;:;11:;tC8@@@@@8fi:.,;ifC8@88@@@G: ,1::;tLC008@@8000GG@@@@@8G1i@@@@@\n");
+printf("@@@t.11iiiiiiiiiiiiiiiiiiiiiiiii1i;,;ii;:;i1LCG8@@@8@@@@@@8@8GLi ,:.,1ti;,;;;i111tfLLfffft1i .@@@@@@\n");
+printf("8@L 11iiiiiiiiiiiiiiiiiiiiiiiii1ii11i;::;;;;;:;ii;tfttfftt1;i;, :t1i:,,;ii;;;:::::;;;;;;;;:;iG@@@@@@\n");
+printf("@@:,tiiiiiiiiiiiiiiiiiiiiiii1i::;i11111i;;:::;;;;;;;iiiiii;;:;;i1iii11;,.;i111iiii;,....,1L0@@@@@@@@\n");
+printf("@G.i1iiiiiiiiiiiiiiiiiiiiii1ii1;:,,::;;ii1111ii;;;;;,....,,:;i1iiiiiii11;. ,::;;:::,  ..,C@@@@@@@@@@\n");
+printf("@L 1iiiiiiiiiiiiii1iiii1iiiiiii111ii;::,,:,,::::::::,,,;;1111iiiiiiiiiii11:  ,::;;;iiii1i,18@8@@@@@@\n");
+printf("@f 1iiiiiiiiiiii1i,;i1iiii111iiiiiiii111iiiiii;;;iiii11iiiiiiiiiiiiiiiiiii11,;ti1iiiiiii11:,G@@@@@@@\n");
+printf("@1.tiiiiiiiiiii1;,i11;:,,:::;;;ii111iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii11:iiiiiiiiiiiiti f@@@@@@\n");
+printf("8:;1iiiiiiiiii1::1ti.;1iiii;;::,:::;;ii1ii1iiiiiiiiiiiiiiiii1iiiiiiiiiiiiiiii1iiiiiiiiiii1i:.,18@@@@\n");
+printf("8:;1iiiiiiiiiiiiii1.;1iiiii1111ii;;;::::::;;iii1111iiiiiiiiiiiiiiiiiiiiiiiiiiiiiii1iiii;;:,;11 L@8@@\n");
+printf("8:;1iiiiiiiiiiiii1i i1iiii,::;;iii111iiii;;:::::::;;;;iiiiiii1iiiiii11i1iiiiiii;;;:::::;;i1i;iC@@@@@\n");
+printf("8,;1iiiiiiiiiiiiii1;.;1iii.,;;::,::;iiiii11111iiii;;::::::::;::::::::::::::::;::;ii1111i;i;1L8@@@@@@\n");
+printf("8,;1iiiiiiiiiiiiiii1i::i1iii;ii111i;;:::;;;;iii1iii111111iiiiiiiiiiiiiiii1iiiiiiii;::,.iG88@@@@@@@@@\n");
+printf("8;.tiiiiiiiiiiiiiiiii1i::;iii;:;;i1tt11iiii;;;;::;::;:;;;;;;;;;;;;;;;;;::;;:;;;:.,:i;;:10@@@@@@@@@@@\n");
+printf("@G.;tiiiiii1iiiiiiiiiii1;::;111i;:::;i111i;;;;ii111iii;;i;;::;:;;::,,. fCLGCGGGGCf;:i11;;1C@@@@@@@@@\n");
+printf("@@G;:11iiiiiiiiiiiiiiiiii1i::;iiiii;:,,,.:ii1;;::,:;i1ttt1111t11111111;:L0CGCGGCGG0L;,i1ii,1@@@@@@@@\n");
+printf("@@@@f;;11iiiiiiiiiiiiiiiiii1i;:;;1111ii;,:fLG000GLti:,,:;111111111111t1  LGCGGGCCCCG8L :1i1,t@@@@@@@\n");
+printf("@@@@@8L;:i11iiiiiiiiiiiiiiiiii1i::;;iiii1i:::;itLCG00Gf1:.,:;i1t1111i:.:fGGGGGGGG0GLf1,;iit,,@@@@@@@\n");
+printf("@@@@@@@@L1;:i11iiiiiiiiiiiiiiiiiii;:::;ii111ii;;::;;ittLLfi   ..,,...iL00CGCLftt1;;::;ii1i:;0@@@@@@@\n");
+printf("@@@@@@@@@@8f1:;i11iiiiiiiiiiiiiiiii1ii:,,:;ii111iiii;;::;;;:,,,,,,,,it1ii;i;;;;;;ii1111i;;C@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@0L1;;ii1iiiiiiiiiiiiiiii111i;:,,::;ii1i1111iiii11111111i;i;;;;i;;i;ii;:::, ,0@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@0L1;;;i11iiiiiiiiiiiiiiii111i;::,,,:;;;iiiiiii;:::,::,;;;;;;;;;ii1t1  .:iC@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@8Cti;;;i111iiiiiiiiiiiiiiii111ii;;::::::::,;:;;ii11iiiii1111ii;;,:t0@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@0C1i:;;iii1iiiiiiiiiiiiiiiiii1111iiiiii11111i11111ii;:,,,:;tC@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@0Cftii;;;;i;iii1iiiii1i1i1iiiii1iiiiii;;;:;:::i;itLG0@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8GCCft111iii;::::::::,:;:,:::::;11tttfLCC0@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+
+scanf("%d", &nombreEntreFrog);
+
+        // On compare le nombre entré avec le nombre mystère
+
+        if (nombreMystereFrog > nombreEntreFrog)
+        {
+            printf("C'est plus ! \n\n");
+        }
+        else if (nombreMystereFrog < nombreEntreFrog)
+        {
+            printf("C'est moins !\n\n");
+        }
+        else
+        {
+
+
+            printf ("Bravo, maintenant tu sais depuis combien de temps il y a un pire dechet que toi sur cette planete. \n\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@08088@@880GG008@@8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@L1iiii1tt1iiiiii1fG@@8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@8GCt:;iiii;:;iiiiiiiiiif@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@C11;;11i;;i1iiii;;iiii11;1L0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8LCi::,10GfGf;,:;CL1ii;ii1iiiL@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8Gf1ii;11ii;;;;:1iii1iii1111;L@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@C1i1iiii111i11iiiiiiiiiii1i;G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@L:1iiiiiiiiiiiiiiiiii11iiii1;L@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0t:;;iiiiiiiiiiiiiii;ii1iiiii0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8GGL11i1iiiiiiiiiiiiiiii1i;f8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8Ct1iiiiiiiiiiiiiiiiiii;L8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8000GGLtiiiiiiiiiiiiiiiiiiiiiiii;ifG@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@00Gftffft::;ii1iiiiiiiiiiiiiiiiiiiii1iii1L8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@L1ffLLLCt;11iiiiiiiiiiiiiiiiiiiiiiii;iii1;iC808@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@L;;LLLLf:1iiiiiiiiiiiiiiiiiiiiiii1i11;tt;i;:tf1f8@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@801:1;iftt1iiiiiiiiiiiiiiii11ii11iii;iiiiGCi1fLLLC1i8@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@0ftfLCCGCCCC0t:iiiiiiiiii1i11ii1i;:;1;;11;tf1CLLfffLG:C@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@0tCLtG0000008L;11iii;i;;;iiiiii;ii;;;ii1ii;G8ifLLLLLLit8@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@Cf@f,G0000G0G;1i1iiiiiiiiiiiiii11i1i1iiii1;t@LiLft1i:t@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@GL0GL00000081;1iiiiiiiiiiiiiiiiiiiiiiiiiiii:C@GC;;ii:@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@G1000C08000G;iiiiiiiiiiiiiiiiiiiiiiiiiiiii1:L@@0;it,L@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@C1GGf;fG08G;iiiiiii11iiiiiiiiiiiiiiiiiiiii;0@8i;1;;8@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@0LLCt1CGCf;1iii11i;:;1iiiiiiiiiiiiiiiii1;1@@i;1i:0@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@80080000ii1iiiiiiii1i111iiiiiiiiiiiii1;0@t:1i;G@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@C;i1iiiiiiiiiiiiiiii1111iii;;i:@1:11;18@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0t:iii1i11iiiiiiiiiiii11i11t;Cf 1;i;;:t8@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@t:1;;i;iii11i1i11111111i1i1@8f;Lt;GGG@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@f,1iiiiiii;it1iiiiiii;;i1,L@@@8@@8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@f,1iii1i11,L@@C;11i111i1i;0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@C:1iiiii1i:8@@C;1iiiiii1:t@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@;i1iiiit,f@8@L;1iiiii1;1@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0,i1ii1,L@@@@G:i1iii1;i@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@C;iii1,8@@@@@G1;1ii;i8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@0:iii;8@@@@@@@L:i1ii8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@i:1i,0@@@@@@@@G:i1:f@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8:i11:0@@@@@@@@@t:1;;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8@C,1ii,0@@@@@@@@@f:1i:@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8i:1i1,0@@@@@@@@@0,11,0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@8@@@@@@80Gfti;iii1,L@@@@@@@@@8,11i;8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Gft11ii;ii11i;i1t0@@@@@8@@G;;;ii;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@fi,;;i:;1i;;1L8@@@@@@@@@0f:i1i1:C@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@8GGGLtttL0@@@@@@@@@@@f;;i1ii1:8@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+printf("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@1i:;1:;1,0@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+
+
+ }
+    } while (nombreEntreFrog != nombreMystereFrog);
+
+
+}
+
+void pamela ()
+
+
+
+{
+    int choix = 2;
+    system("cls" );
+    int nombreMystereSexy = 0, nombreEntreSexy = 0, coupsSexy = 0, rejouer = 0 ;
+    int max = 500;
+    const int MIN = 1;
+
+    srand(time(NULL));
+
+    do
+
+    {
+        // Initialisations pour la partie
+
+        nombreMystereSexy = (rand() % (max - MIN + 1)) + MIN;
+        coupsSexy=0;
+
+        while (coupsSexy<=9 && nombreEntreSexy != nombreMystereSexy)
+        {
+            Color (13,0);
+            printf("Devines combien j'ai eu d'amants.\nTu as droit a 10 propositions.\n Si tu trouves tu auras une surprise ;)\n Un indice ? Je ne crois pas avoir depasse 500... \n  ");
+
+ printf("                                               ,-=---=. \n");
+ printf("                                  .'        `. \n");
+ printf("                                 (            `.\n");
+ printf("                                  `.            `..\n");
+ printf("                                   ,'             .'\n");
+ printf("                                   `.            '.\n");
+ printf("                                     `-.           `-.\n");
+ printf("                                        )             `=-.\n");
+ printf("                                      .'              `=-.\n");
+ printf("                                    .`               .`-.\n");
+ printf("                      _            (                \ `-.\n");
+ printf("                   ,'   `.          `.        /`.    \ \n");
+ printf("                  /        `.         \      |   `.   `. \n");
+ printf("                ,'            `.       )    /      \    \ \n");
+ printf("               /     .'`.        `.    )    |       `.   \ \n");
+ printf("             ,'    .'    `.         `./     \         `.  \ \n");
+ printf("           ,'    .'        `.                \          \  \ \n");
+ printf("         ,'    .'            `.               \          `. \ \n");
+ printf("       ,'   .'                 `.              )          ) (__. \n");
+ printf("     ,'   (                      `.            )          `.----' \n");
+ printf(" _.-'    __)                       `.         .   \n");
+ printf(" `''''''                              `'''''''' \n");
+
+
+            scanf("%d", &nombreEntreSexy);
+            coupsSexy++;
+
+
+            if (nombreEntreSexy == nombreMystereSexy )
+            {
+
+            printf ("Bien joue, je crois que c'est le bon nombre :).\nTa Surprise? Tu vas m'accompagner faire du shopping!!! \n\n");
+
+
+            printf("    \/\  |  . \n");
+            printf("   ()))))))/ \n");
+            printf("  ((/ \))))) \n");
+            printf("  ((),>(((( \n");
+            printf("   )\__ )) \n");
+            printf("  ( __\((__ \n");
+            printf("   /  )\/\,\    \n");
+            printf("  /.|/ _)_) \ \n");
+            printf(" ( \ \  o| \|_ \n");
+            printf("  \|  )_o| (__\ \n");
+            printf(" _/| /.__|  _/ \__ \n");
+            printf("_(_//  /|\\ \ ||\.\ \n");
+            printf("   /   \|/ \ \_____\ \n");
+            printf("   '-..___.' \n");
+            printf("     \  |/ \n");
+            printf("      \ | \n");
+            printf("     .')| \n");
+            printf("    ( / | \n");
+            printf("    /.\ | \n");
+            printf("  (_ \ )| \n");
+            printf("   ) -/ ) \n");
+            printf(" ___-'_/| \n");
+
+            }
+            else if (nombreMystereSexy > nombreEntreSexy&& coupsSexy<=9 && nombreEntreSexy != nombreMystereSexy )
+            {
+            printf("Tu crois que j'ai fait voeux de chastete ou quoi? C'est PLUS! Il te reste %d propositions\n\n", 10-coupsSexy);
+            }
+            else if (nombreMystereSexy < nombreEntreSexy && coupsSexy<=9 && nombreEntreSexy != nombreMystereSexy)
+            {
+            printf("Tu me prends qui? C'est MOINS!, il te reste %d propositions\n\n", 10-coupsSexy);
+            }
+            else
+            {
+            Color (5,0);
+            printf("T'es vraiment un boulet! Je vais retrouver mon 7ème mari, n'essaye pas de m'appeler!\n");
+            printf(" /////////////\\\\ \n");
+            printf("(((((((((((((( \\\\ \n");
+            printf("))) ~~      ~~  ((( \n");
+            printf("((( (*)     (*) ))) \n");
+            printf(")))     <       ((( \n");
+            printf("((( '\______/`  ))) \n");
+            printf(")))\___________/((( \n");
+            printf("       _) (_ \n");
+            printf("      / \_/ \ \n");
+            printf("     /(     )\ \n");
+            printf("    // )___( \\ \n");
+            printf("    \\(     )// \n");
+            printf("     (       ) \n");
+            printf("      |  |  | \n");
+            printf("       | | | \n");
+            printf("       | | | \n");
+            printf("      _|_|_|_ \n");
+            }
+
+        }
+        // Fin de la partie, on demande si on veut rejouer
+        printf("On rejoue beau gosse? (1 = oui, 0 = non) ? ");
+        scanf("%d", &rejouer);
+
+    } while (rejouer);
+
+}
+
+void alien ()
+
+
+
+{
+    int nombreMystere = 0, nombreEntre = 0, coups = 0, rejouer = 0, difficulte = 2;
+    int max = 100;
+    const int MIN = 1;
+    int choix = 3;
+    system("cls" );
+
+    srand(time(NULL));
+
+    do
+
+    {
+        // Initialisations pour la partie
+
+        nombreMystere = (rand() % (max - MIN + 1)) + MIN;
+        coups=0;
+
+        while (coups<=6 && nombreEntre != nombreMystere)
+        {
+            Color (10,0);
+            printf("Utilises ton lance-flammes pour faire flamber l'Alien.\nTire entre 1 et 100 metres.\nMais attention, tu n'as que 7 recharges, si tu vises trop pres ou trop loin on va tous se faire bouffer! \n  ");
+            printf("     __.,,------.._ \n");
+            printf("      ,'''   _      _   ''`. \n");
+            printf("     /.__, ._  -=- _''`    |  \ \n");
+            printf("    (.____.-.`      '''`   | \n");
+            printf("     VvvvvvV`.Y,.    _.,-'   \;    ,     ,     , \n");
+            printf("        Y    ||,   ''\         ,/    ,/    ./ \n");
+            printf("        |   ,'  ,     `-..,'_,'/___,'/   ,'/   , \n");
+            printf("   ..  ,;,,',-''\,'  ,  .     '     ' '' '--,/    .. .. \n");
+            printf(" ,'. `.`---'     `, /  , Y -=-    ,'   ,   ,. .`-..||_|| .. \n");
+            printf("ff\\`. `._        /f ,'j j , ,' ,   , f ,  \=\ Y   || ||`||_.. \n");
+            printf("l` \` `.`.''`-..,-' j  /./ /, , / , / /l \   \=\l   || `' || ||... \n");
+            printf(" `  `   `-._ `-.,-/ ,' /`'/-/-/-/-''''`.`.  `'.\--`'--..`'_`' || , \n");
+            printf("            ''`-_,',  ,'  f    ,   /      `._    ``._     ,  `-.`'//           \n");
+            printf("          ,-'' _.,-'    l_,-'_,,'          '`-._ . '`. /|     `.'\ ,       | \n");
+            printf("        ,',.,-''          \=) ,`-.         ,    `-'._`.V |       \ // .. . /j \n");
+            printf("        |f\\               `._ )-.'`.     /|         `.| |        `.`-||-\\/ \n");
+            printf("        l` \`                 '`._   '`--' j          j' j          `-`---' \n");
+            printf("         `  `                     '`,-  ,'/       ,-''  / \n");
+            printf("                                 ,'',__,-'       /,, ,-' \n");
+            printf("                                 Vvv'            VVv'      \n");
+            scanf("%d", &nombreEntre);
+            coups++;
+
+
+            if (nombreEntre == nombreMystere )
+            {
+
+            printf ("Tu l'as eu en %d coups !!! Ajoutes du rhum, l'Alien flambe c'est delicieux!!!\n\n", coups);
+            Color (14,0);
+
+            printf("                                )  (  (    ( \n");
+            printf("                                         (  )  () @@  )  (( (\n");
+            printf("                                     (      (  )( @@  (  )) ) (\n");
+            printf("                                   (    (  ( ()( /---\   (()( (\n");
+            printf("     _______                            )  ) )(@ !O O! )@@  ( ) ) )\n");
+            printf("    <   ____)                      ) (  ( )( ()@ \ o / (@@@@@ ( ()( )\n");
+            printf(" /--|  |(  o|                     (  )  ) ((@@(@@ !o! @@@@(@@@@@)() (\n");
+            printf("|   >   \___|                      ) ( @)@@)@ /---\-/---\ )@@@@@()( )\n");
+            printf("|  /---------+                    (@@@@)@@@( // /-----\ \\ @@@)@@@@@(  .\n");
+            printf("| |    \ =========______/|@@@@@@@@@@@@@(@@@ // @ /---\ @ \\ @(@@@(@@@ .  .\n");
+            printf("|  \   \\=========------\|@@@@@@@@@@@@@@@@@ O @@@ /-\ @@@ O @@(@@)@@ @   .\n");
+            printf("|   \   \----+--\-)))           @@@@@@@@@@ !! @@@@ % @@@@ !! @@)@@@ .. .\n");
+            printf("|   |\______|_)))/             .    @@@@@@ !! @@ /---\ @@ !! @@(@@@ @ . .\n");
+            printf(" \__==========           *        .    @@ /MM  /\O   O/\  MM\ @@@@@@@. .\n");
+            printf("    |   |-\   \          (       .      @ !!!  !! \-/ !!  !!! @@@@@ .\n");
+            printf("    |   |  \   \          )   ----   .  @@@@ !!     !!  .(. @.  .. .\n");
+            printf("    |   |   \   \        (    /   .(  . \)). ( |O  )( O! @@@@ . )      .\n");
+            printf("    |   |   /   /         ) (      )).  ((  .) !! ((( !! @@ (. ((. .   .\n");
+            printf("    |   |  /   /   ()  ))   ))   .( ( ( ) ). ( !!  )( !! ) ((   ))  ..\n");
+            printf("    |   |_<   /   ( ) ( (  ) )   (( )  )).) ((/ |  (  | \(  )) ((. ).\n");
+            printf("____<_____\\__\__(___)_))_((_(____))__(_(___.oooO_____Oooo.(_(_)_)((_\n");
+            }
+            else if (nombreMystere > nombreEntre && coups<=6 && nombreEntre != nombreMystere )
+            {
+            printf("C'est PLUS loin !, il te reste %d recharges\n\n", 7-coups);
+            }
+            else if (nombreMystere < nombreEntre && coups<=6 && nombreEntre != nombreMystere)
+            {
+            printf("C'est MOINS loin !, il te reste %d recharges\n\n", 7-coups);
+            }
+            else
+            {
+            Color (12,0);
+            printf("C'est foutu on va tous se faire exploser !\n");
+            printf("            __--=--------___\n");
+            printf("         /. \___\____   _, \_      /-\ \n");
+            printf("        /. .  _______     __/=====@ \n");
+            printf("        \----/  |  / \______/      \-/ \n");
+            printf("    _/         _/ o \ \n");
+            printf("   / |    o   /  ___ \ \n");
+            printf("  / /    o\\ |  / O \ /|      __-_\n");
+            printf(" |o|     o\\\   |  \ \ /__--o/o___-_\n");
+            printf(" | |      \\\-_  \____  ----  o___-\n");
+            printf(" |o|       \_ \     /\______-o\_-\n");
+            printf(" | \       _\ \  _/ / |\n");
+            printf(" \o \_   _/      __/ /\n");
+            printf("  \   \-/   _       /|_\n");
+            printf("   \_      / |   - \  |\ \n");
+            printf("     \____/  \ | /  \   |\ \n");
+            printf("             | o |   | \ |\n");
+            printf("             | | |    \ | \ \n");
+            printf("            / | /      \ \ \ \n");
+            printf("          /|  \o|\--\  /  o |\--\ \n");
+            printf("          \----------' \---------'\n");
+            }
+
+        }
+        // Fin de la partie, on demande si on veut rejouer
+        printf("On rejoue mon pote? (1 = oui, 0 = non) ? ");
+        scanf("%d", &rejouer);
+
+    } while (rejouer);
+
+}
+
+
+int main ()
+
+{
+
+
+
+    printf("Choisis ton jeu ! Ils sont classes du plus facile au plus difficile :) :\n\n\n");
+    Color(9,0);
+    printf("1 : Je m'eclate avec la grenouille bizarre !\n");
+
+printf("         (')-=-(')  \n");
+printf("        (   ''   ) \n");
+printf("   ~~~~~~~~~~~~~~~~~~~~ ~\n");
+printf("  ~~~~~~~~~~~~~~~~~~~~~~~~ \n");
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n");
+    Color (5,0);
+    printf("2 : Je vais fair un tour avec Pamela...\n");
+
+printf("      .---.      \n");
+printf("      (_,/\ \.    \n");
+printf("     (`a a(  )       \n");
+printf("     ) \=  ) (       \n");
+printf("    (.--' '--.)      \n");
+printf("    / (_\_/_) \.      \n");
+printf("   | / \   / \ |      \n");
+printf("    \\ / . \ //      \n");
+printf("     \/\___/\/       \n");
+printf("     |  \_/  |       \n");
+printf("      \  /  /    \n");
+printf("       \/  /     \n");
+printf("        ( (      \n\n\n");
+
+    Color (10,0);
+    printf("3 : Je fais une bastion avec Alien !\n");
+printf("      .  .  \n");
+printf("       \/    \n");
+printf("      (@@)   \n");
+printf("----[\_)(_/]----  \n");
+printf(" ---[(=--=)/]---  \n");
+printf("      //\\       \n");
+printf("     _|  |_       \n\n\n");
+
+    scanf("%d", &choix);
+
+switch(choix)
+    {
+    case 1:
+        frog();
+        break;
+    case 2:
+        pamela();
+        break;
+    case 3:
+        alien();
+        break;
+    default:
+        printf("Bordel mais choisis 1,2 ou 3!\n");
+
+    }
+}
